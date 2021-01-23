@@ -1,4 +1,4 @@
-#Digital photo frame scripts for Raspberry pi
+# Digital photo frame scripts for Raspberry pi
 
 ## Downscale images
 python convert --folder ~/Pictures
@@ -10,7 +10,7 @@ Copy rc.local to /etc/rc.local
 Copy startup.py and startup.sh to /home/pi/
 
 
-## Turn off low voltage warning
+## Turn on display overscan 
 echo 'disable_overscan=1' | sudo tee -a /boot/config.txt
 
 ## Disabling the blank screen
