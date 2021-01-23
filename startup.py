@@ -18,7 +18,7 @@ while True:
         # workdays
         if ON == False and (now == 7 or now == 12 or (now >= 17 and now <= 21)):
             log.info("holiday, ON")
-            slideshow_command = "DISPLAY=:0.0 XAUTHORITY=/home/pi/.Xauthority /usr/bin/feh -q -p -Z -z -x -F -R 1200 -Y -D 50 /home/pi/Pictures/ &"
+            slideshow_command = "DISPLAY=:0.0 XAUTHORITY=/home/pi/.Xauthority /usr/bin/feh -q -p -Z -z -x -F -R 1200 -Y -D 50 -s /home/pi/Pictures/ &"
             os.system(slideshow_command)
             ON = True
             command = "vcgencmd display_power 1"
@@ -37,7 +37,7 @@ while True:
         # holiday or weekend
         if ON == False and now >= 8 and now <= 21:
             log.info("holiday, ON")
-            slideshow_command = "DISPLAY=:0.0 XAUTHORITY=/home/pi/.Xauthority /usr/bin/feh -q -p -Z -z -x -F -R 1200 -Y -D 50 /home/pi/Pictures/ &"
+            slideshow_command = "DISPLAY=:0.0 XAUTHORITY=/home/pi/.Xauthority /usr/bin/feh -q -p -Z -z -x -F -R 1200 -Y -D 50 -s /home/pi/Pictures/ &"
             os.system(slideshow_command)
             ON = True
             command = "vcgencmd display_power 1"
