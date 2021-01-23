@@ -11,7 +11,6 @@ Copy startup.py and startup.sh to /home/pi/
 
 
 ## Turn off low voltage warning
-echo 'avoid_warnings=1' | sudo tee -a /boot/config.txt
 echo 'disable_overscan=1' | sudo tee -a /boot/config.txt
 
 ## Disabling the blank screen
