@@ -1,2 +1,2 @@
 #!/bin/bash
-python /home/pi/startup.py
+python3.7 /home/pi/startup.py > /home/pi/python_log.txt 2>&1

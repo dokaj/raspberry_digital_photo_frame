@@ -1,7 +1,13 @@
 # Digital photo frame scripts for Raspberry pi
 
+## Install requirements as root
+
+su root
+
+pip3 install -r requirements.txt
+
 ## Downscale images
-python convert --folder ~/Pictures
+e.g.: python3 convert --folder ~/Pictures
 
 
 ## Digital photo frame
@@ -15,3 +21,5 @@ echo 'disable_overscan=1' | sudo tee -a /boot/config.txt
 
 ## Disabling the blank screen
 echo '[SeatDefaults]' | sudo tee -a /etc/lightdm/lightdm.conf && echo 'xserver-command=X -s 0 -dpms' | sudo tee -a /etc/lightdm/lightdm.conf
+
+
